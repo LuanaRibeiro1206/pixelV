@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: "Recursive";
-    src: url(./fonts/Recursive-VariableFont_CASL\,CRSV\,MONO\,slnt\,wght.ttf);
+    src: url(./fonts/Recursive/Recursive-VariableFont_CASL\,CRSV\,MONO\,slnt\,wght.ttf);
 }
 
 :root {
@@ -255,4 +255,29 @@ header .container-grid {
 
 #servicos .card:hover svg{
     fill: var(--verde-pixelV);
+}
+
+/* --------------- Cases de Sucesso----------- */
+
+#cases h2{
+    margin-right: 5px;
+}
+
+
+#cases{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 120px;
+}
+
+#cases img{
+    height: 300px;
+    border-radius: 40px;
+}
+
+#meuCarrossel{
+    max-width: 1170px;
+    width: 90%;
 }
