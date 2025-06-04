@@ -31,14 +31,14 @@ body {
     background-color: var(--fundo-site);
 }
 
-.titulo{
+.titulo {
     display: flex;
     font-family: "Recursive", sans-linear-bold;
     font-weight: 600;
     font-size: 35px;
 }
 
-.titulo h2{
+.titulo h2 {
     color: var(--branco);
     margin-bottom: 0;
     background-color: var(--roxo-pixelV);
@@ -48,7 +48,7 @@ body {
 
 }
 
-.titulo span{
+.titulo span {
     color: var(--roxo-pixelV);
     border-bottom: solid 3px var(--verde-pixelV);
 }
@@ -136,7 +136,7 @@ header .container-grid {
 
 /* ----------- sobre -------------- */
 
-#sobre{
+#sobre {
     display: flex;
     align-items: center;
     gap: 80px;
@@ -144,18 +144,18 @@ header .container-grid {
     margin-bottom: 120px;
 }
 
-#sobre img{
+#sobre img {
     max-width: 460px;
     width: 40%;
     border-radius: 40px;
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
-} 
+}
 
-#sobre h2{
+#sobre h2 {
     margin-right: 5px;
 }
 
-#sobre p{
+#sobre p {
     font-family: "Recursive", sans-linear;
     font-size: 20px;
     text-align: justify;
@@ -165,7 +165,7 @@ header .container-grid {
 
 /* ---------------- parallax----------- */
 
-#parallax{
+#parallax {
     height: 250px;
 
     /* background-image: url(./img/parallax.svg); */
@@ -177,20 +177,20 @@ header .container-grid {
 
 /* -----------Serviços--------- */
 
-#servicos{
+#servicos {
     margin-bottom: 120px;
 }
 
-#servicos .titulo{
+#servicos .titulo {
     justify-content: center;
     margin-bottom: 55px;
 }
 
-#servicos h2{
+#servicos h2 {
     margin-left: 5px;
 }
 
-.container-cards{
+.container-cards {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -200,17 +200,17 @@ header .container-grid {
     position: relative;
 }
 
-.linha-roxa{
+.linha-roxa {
     position: absolute;
     z-index: -1;
     top: calc(50% - 125px);
 
-   height: 250px;
+    height: 250px;
     width: 100vw;
     background: linear-gradient(0deg, rgba(36, 0, 105, 1)0%, rgba(71, 0, 207, 1)100%);
 }
 
-#servicos .card{
+#servicos .card {
     width: 300px;
     margin: 20px;
     padding: 40px 20px;
@@ -225,7 +225,7 @@ header .container-grid {
     justify-content: center;
 }
 
-#servicos .card h3{
+#servicos .card h3 {
     font-size: 24px;
     margin: 5px 0 30px;
     color: var(--roxo-pixelV);
@@ -233,38 +233,38 @@ header .container-grid {
     text-align: center;
 }
 
-#servicos .card p{
+#servicos .card p {
     font-family: "Recusive", sans-linear;
     font-size: 18px;
     margin-bottom: 20px;
     line-height: 1.5
 }
 
-#servicos .card svg{
+#servicos .card svg {
     color: var(--roxo-pixelV);
     height: 75px;
 }
 
-#servicos .card:hover{
+#servicos .card:hover {
     border: solid 3px var(--verde-pixelV);
 }
 
-#servicos .card:hover h3{
+#servicos .card:hover h3 {
     color: var(--verde-pixelV);
 }
 
-#servicos .card:hover svg{
+#servicos .card:hover svg {
     fill: var(--verde-pixelV);
 }
 
 /* --------------- Cases de Sucesso----------- */
 
-#cases h2{
+#cases h2 {
     margin-right: 5px;
 }
 
 
-#cases{
+#cases {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -272,12 +272,151 @@ header .container-grid {
     margin-bottom: 120px;
 }
 
-#cases img{
+#cases img {
     height: 300px;
     border-radius: 40px;
 }
 
-#meuCarrossel{
+#meuCarrossel {
     max-width: 1170px;
     width: 90%;
+}
+
+/* -------------Contato----------- */
+#contato {
+    text-align: center;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+#contato .titulo {
+    justify-content: center;
+    margin-bottom: 55px;
+
+}
+
+#contato h2 {
+    margin-left: 5px;
+}
+
+#contato form {
+    width: 90%;
+    max-width: 980px;
+
+    margin: 0 auto;
+    padding: 60px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 40px;
+    background-color: var(--contato);
+    border: solid 3px var(--roxo-pixelV);
+
+
+    color: var(--preto);
+    font-family: "Recursive", sans-linear;
+    font-size: 17px;
+}
+
+.campo {
+    width: 60%;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+}
+
+.campo-descricao {
+    width: 60%;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+
+.campo input {
+    height: 40px;
+
+    color: var(--preto);
+    background-color: var(--branco);
+
+
+    border: none;
+    border-radius: 4px;
+
+    text-indent: 10px;
+
+    outline: none;
+}
+
+.campo-descricao textarea {
+    color: var(--preto);
+    background-color: var(--branco);
+
+
+    border: none;
+    border-radius: 4px;
+
+    outline: none;
+
+    padding: 10px;
+
+    resize: none;
+}
+
+
+.campo-lable,
+.campo-descricao label {
+    margin-bottom: 15px;
+}
+
+.campo input,
+.campo-descricao textarea {
+    font-family: "Recursive", sans-linear;
+    font-size: 17px;
+}
+
+.campo input::placeholder,
+.campo-descricao textarea::placeholder {
+    color: #a0a0a0;
+}
+
+.campo input:focus,
+.campo-descricao textarea:focus {
+    outline: 2px solid var(--verde-pixelV);
+}
+
+#contato form button {
+    height: 40px;
+    width: 60%;
+
+    background-color: var(--roxo-pixelV);
+    color: var(--branco);
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 17px;
+    font-family: "Recursive", sans-linear;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+    
+    transition: background-color 500ms;
+}
+
+#contato form button:hover{
+    background-color: var(--verde-pixelV);
 }
